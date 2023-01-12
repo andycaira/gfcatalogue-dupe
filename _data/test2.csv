@@ -1,4 +1,4 @@
-pid,cr_number,label,description,dimensions,material,support,_date,provenance,markings,theme,classification,order,layout,collection,thumbnail,full
+pid,cr_number,label,description,dimensions,material,support,_date,provenance,markings,theme,object_type,order,layout,collection,thumbnail,full
 p01,P01,Shrine 0,,unknown,"acrylic, collage",canvas,July 2021,"The artist
 David Dejesus Garcia (2021)
 current location unknown/destroyed",,,painting,0,test2_item,test2,/img/derivatives/simple/p01/thumbnail.jpg,/img/derivatives/simple/p01/fullwidth.jpg
