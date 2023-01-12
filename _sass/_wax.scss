@@ -264,7 +264,7 @@ content section
   width: $max-width;
   overflow: flex-wrap;
 }
-
+/*
 .full-width {
   width: 100vw;
   position: relative;
@@ -274,7 +274,7 @@ content section
   margin-right: -50vw;
   margin-bottom: $more-margin;
 }
-
+*/
 .wax-parallax.inline-parallax {
   margin-top: $more-margin;
 }
@@ -318,12 +318,11 @@ item pages (iiif + metadata)
 
 */
 .item-view {
-  width:           110%;
+  width:           100%;
   display:         inline-flex;
   flex-wrap:       nowrap;
   justify-content: space-between;
   align-items:     center;
-  margin-left:     -5%;
 
   .image-viewer {
     position: relative;
