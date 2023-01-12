@@ -21,4 +21,4 @@ This project was made using [Wax](https://minicomp.github.io/wiki/#/wax/).
 
 ### Browse the Collection
 
-{% include collection_gallery.html facet_by='object_type' collection='qatar' %}
+{% include collection_gallery.html facet_by='object_type' collection='test2' %}
