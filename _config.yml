@@ -23,7 +23,7 @@ title:            |
                      Catalogue Raisonné
 description:      'Example Description'
 url:              'https://andycaira.github.io'
-baseurl:          '/gfcatalogue'
+baseurl:          '/gfcatalogue-dupe'
 copyright:        'Griffin Fisher Estate, 2023'
 logo:             '/assets/logo.png'
 
