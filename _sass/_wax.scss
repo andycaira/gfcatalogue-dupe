@@ -318,7 +318,7 @@ item pages (iiif + metadata)
 
 */
 .item-view {
-  width:           100%;
+//  width:           100%;
   display:         inline-flex;
   flex-wrap:       nowrap;
   justify-content: space-between;
@@ -327,7 +327,7 @@ item pages (iiif + metadata)
   .image-viewer {
     position: relative;
     text-align: center;
-    height:   $viewer-height;
+    height:   100%;
     max-height: 80vh;
     background-color: $neutral;
     width:    100%;
@@ -344,8 +344,9 @@ item pages (iiif + metadata)
 
     .item-full-image {
       max-width: $max-width;
-      max-height: 100%;
-      height: $viewer-height;
+      max-height: $viewer-height;
+      height: 100%;
+
     }
   }
 
