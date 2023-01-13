@@ -11,6 +11,33 @@ ul.jekyllcodex_accordion li input:checked + label::before {transform: rotate(-45
 </style>
 <ul class="jekyllcodex_accordion">
     {% for item in page.accordion %}
+    {% if item.content contains 'page.' %}
+    {% assign key = item.content | remove: 'page.' %}
+    {% assign content = page[key] %}
+  {% else %}
+    {% assign content = item.content %}
+  {% endif %}
+
+  {% comment %}
+  Only display non-empty values
+  {% endcomment %}
+  {% if content | strip != '' %}
+    {% if item.type == 'link' %}
+      {% if key == 'manifest' %}
+        {%- capture content -%}
+          <a href="{{ content | absolute_url }}" target="_blank" rel="noreferrer">{{ content | absolute_url }}</a>
+        {%- endcapture -%}
+      {% else %}
+        {%- capture content -%}
+          <a href="{{ content | absolute_url }}" target="_blank" rel="noreferrer">
+            {{ content | absolute_url | remove: 'https://' | remove: 'http://' | split: "/" | first }}
+          </a>
+        {%- endcapture -%}
+      {% endif %}
+    {% endif %}
+      <dt>{{ item.title }}</dt>
+      <dd>{{ content | strip }}</dd>
+  {% endif %}
         <li><input id="accordion{{ forloop.index }}" type="checkbox" /><label for="accordion{{ forloop.index }}">{{ item.title }}</label><div>{{ item.content | markdownify }}</div></li>
     {% endfor %}
 </ul>
