@@ -87,32 +87,15 @@ search:
   main:
     index: '/search/index.json' # file the index will get written to
     collections:
-      collection: # collection name
+      test2: # collection name
         content: false # whether or not to index page content
         fields: # the metadata fields to index
-          - material
-          - support
+          - materials
           - label
           - _date
           - provenance
           - theme
           - classification
-
-search:
-  test2:
-    index: '/search/index.json' # file the index will get written to
-    collections:
-      test2:
-        content: false # whether or not to index page content
-        fields: # the metadata fields to index
-          - material
-          - support
-          - label
-          - _date
-          - provenance
-          - theme
-          - classification
-          - description
 
 # --------------------------------------------------------------
 # SITE MENU SETTINGS

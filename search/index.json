@@ -5,8 +5,7 @@ layout: none
   {
     "pid": "c09",
     "label": "AO 11..11.1 with PROLE",
-    "material": "collage",
-    "support": "paper",
+    "materials": "collage on paper",
     "_date": "November 2020",
     "provenance": null,
     "theme": "work, abstract",
@@ -19,8 +18,7 @@ layout: none
   {
     "pid": "c10",
     "label": "AO 11.11.11 with PROLE",
-    "material": "collage",
-    "support": "paper",
+    "materials": "paint, marker, permanent marker, plastic bag on paper",
     "_date": "November 2020",
     "provenance": null,
     "theme": null,
@@ -33,8 +31,7 @@ layout: none
   {
     "pid": "p01",
     "label": "Shrine 0",
-    "material": "acrylic, collage",
-    "support": "canvas",
+    "materials": "acrylic and collage on canvas",
     "_date": "July 2021",
     "provenance": "The artist\nDavid Dejesus Garcia (2021)\ncurrent location unknown/destroyed",
     "theme": null,
@@ -47,8 +44,7 @@ layout: none
   {
     "pid": "p03",
     "label": "Untitled (Self Portrait as the Magician)",
-    "material": "acrylic, permanent marker, paper, staples, red string",
-    "support": "canvas",
+    "materials": "acrylic, permanent marker, paper, staples, and red string on canvas",
     "_date": "October 2020",
     "provenance": "The Estate of Griffin Fisher (2022)",
     "theme": "portrait",
@@ -61,8 +57,7 @@ layout: none
   {
     "pid": "p17",
     "label": "Untitled (Self Portrait)",
-    "material": "acrylic, barbed wire, Salonpas patch",
-    "support": "wood",
+    "materials": "acrylic, barbed wire, nails, and Salonpas patch on wood",
     "_date": "August 2021",
     "provenance": "The Estate of Griffin Fisher (2022)",
     "theme": "portrait",
@@ -75,8 +70,7 @@ layout: none
   {
     "pid": "p54",
     "label": "Studio Window",
-    "material": "acrylic, pen, string, plastic",
-    "support": "canvas",
+    "materials": "acrylic, pen, string, and plastic on canvas",
     "_date": "July 2022",
     "provenance": "The artist\nMichael Rocco (2022)",
     "theme": "landscape, still life",
@@ -89,8 +83,7 @@ layout: none
   {
     "pid": "po006",
     "label": "Handcuffed by Wage",
-    "material": "spray paint",
-    "support": "paper",
+    "materials": "spray paint on paper",
     "_date": "December 2018",
     "provenance": null,
     "theme": null,
@@ -103,8 +96,7 @@ layout: none
   {
     "pid": "po009",
     "label": "Make Public Transit Free",
-    "material": "spray paint",
-    "support": "paper",
+    "materials": "spray paint on paper",
     "_date": "April 2019",
     "provenance": null,
     "theme": null,
