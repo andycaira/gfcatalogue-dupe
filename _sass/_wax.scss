@@ -112,6 +112,7 @@ content section
   padding-bottom: 5rem;
   margin: auto;
   padding: 1rem; //just added
+  overflow: auto;
 
   h1, h2, h3, h4, h5, h5 {
     margin-bottom: $less-margin;
@@ -322,10 +323,12 @@ item pages (iiif + metadata)
 */
 .item-view {
 //  width:           100%;
+
   display:         inline-flex;
   flex-wrap:       nowrap;
   justify-content: space-between;
   align-items:     center;
+  float:           left;
 
   .image-viewer {
     position: relative;
@@ -387,6 +390,8 @@ item pages (iiif + metadata)
   border: $neutral 1px solid;
   border-radius: 3px;
   padding: $less-margin;
+  min-width: 50%;
+  float: left;
 }
 
 /*
