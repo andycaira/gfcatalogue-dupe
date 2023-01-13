@@ -6,8 +6,10 @@ layout: default
   The block below controls the image viewer
 {% endcomment %}
 
+<div class="item-head">
 <h5 alt="{{ page.cr_number | escape }}" class='item-cr-number'>{{ page.cr_number }}</h5>
 <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
+</div>
 
 {% if page.image_viewer %}
   {% assign viewer = page.image_viewer %}
