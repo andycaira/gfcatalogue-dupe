@@ -111,6 +111,7 @@ content section
   padding-top: $margin;
   padding-bottom: 5rem;
   margin: auto;
+  padding: 1rem; //just added
 
   h1, h2, h3, h4, h5, h5 {
     margin-bottom: $less-margin;
@@ -263,7 +264,7 @@ content section
 
   margin: inherit;
   max-width: 100%;
-  width: $max-width;
+//  width: $max-width; !!!!!!!!!just removed!!!!!
   overflow: flex-wrap;
 }
 /*
