@@ -8,9 +8,9 @@
 
 
 <table style="width:100%;"><tr>
-  <td><a href="https://andycaira.github.io/gfcatalogue"><img src="" /></a></td>
-  <td><a href="https://andycaira.github.io/gfcatalogue"><img src=""/></a></td>
-  <td><a href="https://andycaira.github.io/gfcatalogue"><img src="" /></a></td>
+  <td><a href="https://andycaira.github.io/gfcatalogue"><img src="/img/derrivatives/simple/p03/thumbnail.jpg" /></a></td>
+  <td><a href="https://andycaira.github.io/gfcatalogue"><img src="/img/derrivatives/simple/p54/thumbnail.jpg"/></a></td>
+  <td><a href="https://andycaira.github.io/gfcatalogue"><img src=".img/derrivatives/simple/p01/thumbnail.jpg" /></a></td>
 </tr></table>
 
 ## About
@@ -29,4 +29,4 @@ Here you will find.... Compiled/put together by .... etcetera etcetera.
 
 ## Credits
 
-See: [https://andycaira.github.io/gfcatalogue/thanks]
+See: [credits](/credits)
