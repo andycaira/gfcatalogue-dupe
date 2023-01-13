@@ -145,9 +145,10 @@ content section
   }
 
   h5 {
-    font-size: 1rem;
+    font-size: 16px;
     letter-spacing: 0.15rem;
     color: $text-color;
+    font-weight: 400;
   }
 
   img {
@@ -206,11 +207,6 @@ content section
       }
     }
   }
-}
-
-#item-cr-number {
-  font-size: 16px;
-  font-weight: 400;
 }
 
 #wax-footer {
