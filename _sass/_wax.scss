@@ -189,11 +189,6 @@ content section
       }
     }
 
-    #item-cr-number {
-      font-size: 16px;
-      font-weight: 400;
-  }
-
     .inline-image-reference {
       background-color: $neutral;
       margin-top: $more-margin;
@@ -211,6 +206,11 @@ content section
       }
     }
   }
+}
+
+#item-cr-number {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 #wax-footer {
