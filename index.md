@@ -1,11 +1,6 @@
 ---
 layout: page
 show_title: false
-banner:
-  collection: qatar
-  pid: obj10
-  y: 25%
-  height: '500px'
 ---
 
 The catalogue raisonné of Griffin Fisher includes all of the known paintings, sculptures, prints, and other works created by the artist. 
@@ -15,8 +10,6 @@ The artworks in this catalogue are organized chronologically.  Each artwork has
 Each artwork has its own page, or record, which includes the work's principal information and, when possible, an image that can be enlarged.  Many entries include commentaries and supplementary materials, such as related drawings by Fisher, documentary photographs, reference images, and other relevant information.
 
 Fisher did not provide titles for the majority of their art works.  Accordingly, the titles listed in this catalogue raisonné follow those provided by the estate's inventory whenever possible. Posthumously titled works are labelled where applicable. 
-
-This project was made using [Wax](https://minicomp.github.io/wiki/#/wax/).
 
 
 ### Browse the Collection
