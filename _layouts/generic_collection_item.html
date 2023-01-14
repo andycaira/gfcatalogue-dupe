@@ -34,7 +34,6 @@ layout: default
   The block below controls the item metadata table
 {% endcomment %}
 
-<div class="item-info">
 {% if layout.meta.size %}
   {% assign metadata = layout.meta %}
 {% elsif page.meta.size %}
@@ -43,6 +42,5 @@ layout: default
 {% if metadata.size %}
   {% include item_metadata.html meta=metadata %}
 {% endif %}
-</div>
 
 {% include accordion.html %} 
