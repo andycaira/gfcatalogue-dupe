@@ -384,6 +384,10 @@ item pages (iiif + metadata)
   }
 }
 
+.item-info {
+  float: left;
+}
+
 .metadata-block {
   font-family: $body-font;
   max-width: 100%;
