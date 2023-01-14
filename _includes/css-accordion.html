@@ -1,0 +1,33 @@
+
+<div class="accordion"> 
+    <button onclick="myFunction('About')" class="w3-btn w3-block w3-gray w3-left-align">About</button>
+    <div id="About" class="accordion hide">
+        <h4>Some Title</h4>
+         <p>Some text..</p>
+    </div>
+</div>
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("show") == -1) {
+    x.className += "show";
+  } else { 
+    x.className = x.className.replace("show", "");
+  }
+}
+</script>
+</body>
+
+.accordion {
+    float: left;
+}
+.hide {
+    display: none !important
+}
+.show-block, .show {
+    display: block !important
+}
+.show-inline-block {
+    display: inline-block !important
+}
