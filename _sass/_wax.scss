@@ -172,6 +172,7 @@ content section
 
   #wax-content {
     min-height: 70vh;
+    overflow: auto;
 
     .exhibit-meta {
       margin-bottom: $super-margin;
