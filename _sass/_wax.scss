@@ -408,22 +408,22 @@ accordion
   clear: left;
 }
 .button {
-  width: 40%
-  background-color: $griff-pink
+  width: 40%;
+  background-color: $griff-pink;
 }
 .button:focus {
-  background-color: $griff-green
-  text-decoration: underline
-  font-weight
+  background-color: $griff-green;
+  text-decoration: underline;
+  font-weight: 400;
 }
 .hide {
-  display: none !important
+  display: none !important;
 }
 .show-block, .show {
-  display: block !important
+  display: block !important;
 }
 .show-inline-block {
-  display: inline-block !important
+  display: inline-block !important;
 }
 
 /*
