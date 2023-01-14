@@ -400,6 +400,34 @@ item pages (iiif + metadata)
 
 /*
 
+accordion
+
+*/
+
+.accordion {
+  clear: left;
+}
+.button {
+  width: 40%
+  background-color: $griff-pink
+}
+.button:focus {
+  background-color: $griff-green
+  text-decoration: underline
+  font-weight
+}
+.hide {
+  display: none !important
+}
+.show-block, .show {
+  display: block !important
+}
+.show-inline-block {
+  display: inline-block !important
+}
+
+/*
+
 search box
 
 */

@@ -1,9 +1,15 @@
 
 <div class="accordion"> 
-    <button onclick="myFunction('About')" class="w3-btn w3-block w3-gray w3-left-align">About</button>
-    <div id="About" class="accordion hide">
-        <h4>Some Title</h4>
-         <p>Some text..</p>
+    {% for item in include.accordion %}
+    {% if item.value contains 'page.' %}
+      {% assign key = item.value | remove: 'page.' %}
+      {% assign value = page[key] %}
+    {% else %}
+      {% assign value = item.value %}
+    {% endif %}
+    <button onclick="myFunction('Display')" class="button"><h4>{{ item.label }}</h4></button>
+    <div id="Display" class="accordion hide">
+         <p>{{ value | strip }}</p>
     </div>
 </div>
 
@@ -19,15 +25,4 @@ function myFunction(id) {
 </script>
 </body>
 
-.accordion {
-    float: left;
-}
-.hide {
-    display: none !important
-}
-.show-block, .show {
-    display: block !important
-}
-.show-inline-block {
-    display: inline-block !important
-}
+
