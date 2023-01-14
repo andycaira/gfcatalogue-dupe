@@ -6,7 +6,7 @@ layout: default
   The block below controls the image viewer
 {% endcomment %}
 
-<div class="item-head">
+<div class="item-info">
 <h5 alt="{{ page.cr_number | escape }}" class='item-cr-number'>{{ page.cr_number }}</h5>
 <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
 </div>
@@ -34,6 +34,7 @@ layout: default
   The block below controls the item metadata table
 {% endcomment %}
 
+<div class="item-info">
 {% if layout.meta.size %}
   {% assign metadata = layout.meta %}
 {% elsif page.meta.size %}
@@ -42,12 +43,6 @@ layout: default
 {% if metadata.size %}
   {% include item_metadata.html meta=metadata %}
 {% endif %}
+</div>
 
-{% if layout.accordion %}
-  {% assign accordion = layout.accordion %}
-{% elsif page.accordion %}
-  {% assign accordion = page.accordion %} 
-{% endif %}
-{% if accordion %}
-  {% include accordion.html %} 
-{% endif %}
+{% include accordion.html %} 
