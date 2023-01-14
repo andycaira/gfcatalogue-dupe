@@ -8,11 +8,30 @@
     {% else %}
       {% assign value = item.value %}
     {% endif %}
+
+    {% comment %}
+    Only display non-empty values
+    {% endcomment %}
+    {% if value | strip != '' %}
+      {% if item.type == 'link' %}
+        {% if key == 'manifest' %}
+          {%- capture value -%}
+            <a href="{{ value | absolute_url }}" target="_blank" rel="noreferrer">{{ value | absolute_url }}</a>
+          {%- endcapture -%}
+        {% else %}
+          {%- capture value -%}
+            <a href="{{ value | absolute_url }}" target="_blank" rel="noreferrer">
+              {{ value | absolute_url | remove: 'https://' | remove: 'http://' | split: "/" | first }}
+            </a>
+          {%- endcapture -%}
+        {% endif %}
+      {% endif %}
     <button onclick="myFunction('Display')" class="button"><h4>{{ item.label }}</h4></button>
     <div id="Display" class="accordion hide">
          <p>{{ value | strip }}</p>
     </div>
 </div>
+{% endif %}
 {% endfor %}
 <script>
 function myFunction(id) {

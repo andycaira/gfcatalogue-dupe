@@ -43,4 +43,11 @@ layout: default
   {% include item_metadata.html meta=metadata %}
 {% endif %}
 
+{% if layout.accordion %}
+  {% assign metadata = layout.accordion %}
+{% elsif page.accordion %}
+  {% assign metadata = page.accordion %}
+{% endif %}
+{% if accordion.size %}
 {% include css-accordion.html accordion=css-accordion %} 
+{% endif %}
