@@ -24,7 +24,7 @@
           {%- endcapture -%}
         {% endif %}
       {% endif %}
-        <dt>{{page.accordion}}</dt>
+        <dt>{{ item.label }}</dt>
         <dd>{{ value | strip }}</dd>
     {% endif %}
   {% endfor %}
