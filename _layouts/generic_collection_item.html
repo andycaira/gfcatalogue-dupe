@@ -34,8 +34,12 @@ layout: default
   The block below controls the item metadata table
 {% endcomment %}
 
-
-{% if metadata.size %}
+{% if layout.meta %}
+  {% assign metadata = layout.meta %}
+{% elsif page.meta %}
+  {% assign metadata = page.meta %}
+{% endif %}
+{% if metadata %}
   {% include item_metadata.html meta=metadata %}
 {% endif %}
 
