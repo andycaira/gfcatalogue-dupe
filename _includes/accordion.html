@@ -2,7 +2,7 @@
 <div class="accordion"> 
   {% for item in include.accordion %}
     {% if item.content contains 'page.' %}
-      {% assign key = item.content | remove: 'page.' %}
+      {% assign key = item.content | remove: 'page' %}
       {% assign content = page[key] %}
     {% else %}
       {% assign content = item.content %}
