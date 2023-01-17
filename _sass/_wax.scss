@@ -409,12 +409,11 @@ accordion
   clear: left;
 }
 .button {
-  width: 40%;
-  background-color: $griff-pink;
+  width: fit-content;
+  background-color: white;
 }
 .button:focus {
-  background-color: $griff-green;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 400;
 }
 .hide {

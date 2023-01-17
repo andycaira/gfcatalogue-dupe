@@ -12,7 +12,8 @@ accordion:
   - label: Related works
 ---
 <body>
-  <p>
-    sample {{ page.provenance | newline_to_br }}
-  </p>
+  <h4>About</h4>
+  <p>{{page.description}}</p>
+  <h4>Related Works</h4>
+  <p><a href='{{page.related | absolute_url}}'>{{page.label}}</a></p>
 </body>
