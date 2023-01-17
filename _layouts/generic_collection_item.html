@@ -48,7 +48,7 @@ layout: default
 {% elsif page.accordion %}
   {% assign metadata = page.accordion %}
 {% endif %}
-{% if metadata %}
-{% include accordion.html %} 
+{% if accordion %}
+{% include accordion.html accordion=metadata %} 
 {% endif %}
 {{ content }}
