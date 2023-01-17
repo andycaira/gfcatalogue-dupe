@@ -6,9 +6,13 @@ meta:
   - value: page._date
   - value: page.materials
   - value: page.dimensions
-  - value: page.provenance
 accordion:
   - title: About
-    value: page.description
+    content: page.description
   - label: Related works
 ---
+<body>
+  <p>
+    sample {{ page.provenance }}
+  </p>
+</body>
