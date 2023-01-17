@@ -1,15 +1,15 @@
 
 <div class="accordion"> 
   {% for item in include.accordion %}
-    {% if item.content contains 'page.' %}
+    {% if item.value contains 'page.' %}
       {% assign key = item.content | remove: 'page' %}
       {% assign value = page[key] %}
     {% else %}
-      {% assign value = item.content %}
+      {% assign value = item.calue %}
 
     <button onclick="myFunction('Display')" class="button"><h4>{{ item.title }}</h4></button>
     <div id="Display" class="accordion hide">
-         <p>{{ content | strip }}</p>
+         <p>{{ value | strip }}</p>
     </div>
 </div>
 {% endif %}
