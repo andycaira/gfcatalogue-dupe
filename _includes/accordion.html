@@ -1,6 +1,34 @@
 
 <div class="accordion"> 
+  {% for item in include.accordion %}
+  {% if item.comment contains 'page.' %}
+    {% assign key = item.comment | remove: 'page.' %}
+    {% assign comment = page[key] %}
+  {% else %}
+    {% assign comment = item.comment %}
+  {% endif %}
 
+  {% comment %}
+  Only display non-empty values
+  {% endcomment %}
+  {% if comment | strip != '' %}
+    {% if item.type == 'link' %}
+      {% if key == 'manifest' %}
+        {%- capture comment -%}
+          <a href="{{ comment | absolute_url }}" target="_blank" rel="noreferrer">{{ comment | absolute_url }}</a>
+        {%- endcapture -%}
+      {% else %}
+        {%- capture comment -%}
+          <a href="{{ comment | absolute_url }}" target="_blank" rel="noreferrer">
+            {{ comment | absolute_url | remove: 'https://' | remove: 'http://' | split: "/" | first }}
+          </a>
+        {%- endcapture -%}
+      {% endif %}
+    {% endif %}
+      <dt>{{ item.title }}</dt>
+      <dd>{{ comment | strip }}</dd>
+  {% endif %}
+{% endfor %}
 
     <button onclick="myFunction('Display')" class="button"><h4>About</h4></button>
     <div id="Display" class="accordion hide">
