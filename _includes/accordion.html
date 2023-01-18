@@ -19,22 +19,3 @@ function myFunction(id) {
 }
 </script>
 </body>
-
-{% comment %}
-{% for item in include.accordion %}
-{% if item.value contains 'page.' %}
-  {% assign key = item.content | remove: 'page' %}
-  {% assign value = page[key] %}
-{% else %}
-  {% assign value = item.value %}
-
-{% if layout.accordion %}
-  {% assign metadata = layout.accordion %}
-{% elsif page.accordion %}
-  {% assign metadata = page.accordion %}
-{% endif %}
-{% if accordion %}
-{% include accordion.html accordion=metadata %} 
-{% endif %}
-{{ content }}
-{% endcomment %}
