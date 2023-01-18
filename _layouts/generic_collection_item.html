@@ -43,20 +43,4 @@ layout: default
   {% include item_metadata.html meta=metadata %}
 {% endif %}
 
-<div class="accordion">
-  <button onclick="myFunction('Display')" class="button"><h4>{{ content }}</h4></button>
-  <div id="Display" class="accordion hide">
-       <p>{{ content }}</p>
-  </div>
-  </div>
-  
-  <script>
-  function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("show") == -1) {
-  x.className += "show";
-  } else { 
-  x.className = x.className.replace("show", "");
-  }
-  }
-  </script>
+{% include accordion.html %}
