@@ -1,6 +1,6 @@
 
 <div class="accordion"> 
-  {% for item in accordion %}
+  {% for item in include.accordion %}
   {% if item.value contains 'page.' %}
     {% assign key = item.value | remove: 'page.' %}
     {% assign value = page[key] %}
