@@ -1,5 +1,5 @@
 
-<dl class="accordion"> 
+<div class="accordion"> 
   {% for item in include.accordion %}
     {% if item.value contains 'page.' %}
       {% assign key = item.value | remove: 'page.' %}
@@ -8,12 +8,12 @@
       {% assign value = item.value %}
     {% endif %}
 
-    <button onclick="myFunction('Display')" class="button"><dt>{{ item.label }}</dt></button>
+    <button onclick="myFunction('Display')" class="button"><h4>{{ item.label }}</h4></button>
     <div id="Display" class="accordion hide">
-         <dd>{{ value }}</dd>
+         <p>{{ value }}</p>
     </div>
-  </dl>
-{% endfor %}
+  </div>
+
 <script>
 function myFunction(id) {
   var x = document.getElementById(id);
@@ -24,4 +24,5 @@ function myFunction(id) {
   }
 }
 </script>
+{% endfor %}
 </body>
