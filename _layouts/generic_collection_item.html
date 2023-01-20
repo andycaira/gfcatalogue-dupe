@@ -35,12 +35,12 @@ layout: default
 {% endcomment %}
 
 {% if layout.meta %}
-  {% assign peach = layout.meta %}
+  {% assign metadata = layout.meta %}
 {% elsif page.meta %}
-  {% assign peach = page.meta %}
+  {% assign metadata = page.meta %}
 {% endif %}
-{% if peach %}
-  {% include item_metadata.html meta=peach %}
+{% if metadata %}
+  {% include item_metadata.html meta=metadata %}
 {% endif %}
 
 {% if layout.accordion %}
