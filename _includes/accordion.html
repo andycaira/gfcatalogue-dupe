@@ -20,13 +20,14 @@
         {%- endcapture -%}
       {% endif %}
     {% endif %}
-    <button onclick="myFunction('Display')" class="button"><h4>{{ item.label }}</h4></button>
+    <button class="button" data-toggle="collapse" data-target="#Display"><h4>{{ item.label }}</h4></button>
     <div id="Display" class="accordion hide">
          <p>{{ value }}</p>
     </div>
   </div>
+  
   {% endif %}
-
+<!-- onclick="myFunction('Display')"
 <script>
 function myFunction(id) {
   var x = document.getElementById(id);
@@ -36,6 +37,6 @@ function myFunction(id) {
     x.className = x.className.replace("show", "");
   }
 }
-</script>
+</script>-->
 {% endfor %}
 </body>
