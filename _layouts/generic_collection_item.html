@@ -44,12 +44,12 @@ layout: default
 {% endif %}
 
 {% if layout.accordion %}
-  {% assign accordion = layout.accordion %}
+  {% assign metadata = layout.accordion %}
 {% elsif page.accordion %}
-  {% assign accordion = page.accordion %}
+  {% assign metadata = page.accordion %}
 {% endif %}
-{% if accordion %}
-  {% include accordion.html %}
+{% if metadata %}
+  {% include accordion.html accordion=metadata %}
 {% endif %}
 
 {{ content }}
