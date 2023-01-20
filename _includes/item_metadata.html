@@ -11,11 +11,10 @@
     {% comment %}
     Only display non-empty values
     {% endcomment %}
-    {% if value | strip != '' %}
- 
+
         <dt>{{ item.label }}</dt>
         <dd>{{ value | strip }}</dd>
-    {% endif %}
+
   {% endfor %}
 </dl>
 </p>
