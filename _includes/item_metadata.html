@@ -11,10 +11,23 @@
     {% comment %}
     Only display non-empty values
     {% endcomment %}
-
+    {% if value | strip != '' %}
+      {% if item.type == 'link' %}
+        {% if key == 'manifest' %}
+          {%- capture value -%}
+            <a href="{{ value | absolute_url }}" target="_blank" rel="noreferrer">{{ value | absolute_url }}</a>
+          {%- endcapture -%}
+        {% else %}
+          {%- capture value -%}
+            <a href="{{ value | absolute_url }}" target="_blank" rel="noreferrer">
+              {{ value | absolute_url | remove: 'https://' | remove: 'http://' | split: "/" | first }}
+            </a>
+          {%- endcapture -%}
+        {% endif %}
+      {% endif %}
         <dt>{{ item.label }}</dt>
         <dd>{{ value | strip }}</dd>
-
+    {% endif %}
   {% endfor %}
 </dl>
 </p>
