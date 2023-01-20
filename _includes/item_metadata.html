@@ -1,5 +1,4 @@
-<p>
-<dl class='metadata-block'>
+<div class='metadata-block'>
   {% for item in include.meta %}
     {% if item.value contains 'page.' %}
       {% assign key = item.value | remove: 'page.' %}
@@ -25,9 +24,8 @@
           {%- endcapture -%}
         {% endif %}
       {% endif %}
-        <dt>{{ item.label }}</dt>
-        <dd>{{ value | strip }}</dd>
+        <h4>{{ item.label }}</h4>
+        <p>{{ value | strip }}</p>
     {% endif %}
   {% endfor %}
-</dl>
-</p>
+</div>
