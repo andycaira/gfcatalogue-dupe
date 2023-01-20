@@ -20,7 +20,7 @@
         {%- endcapture -%}
       {% endif %}
     {% endif %}
-    <button class="button" data-toggle="collapse" data-target="#Display"><h4>{{ item.label }}</h4></button>
+    <a class="button" data-toggle="collapse" href="#Display"><h4>{{ item.label }}</h4></a>
     <div id="Display" class="accordion hide">
          <p>{{ value | newline_to_br }}</p>
     </div>
