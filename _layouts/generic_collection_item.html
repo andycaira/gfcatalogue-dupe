@@ -20,7 +20,7 @@ layout: default
 {% if viewer %}
   <div class='item-view'>
     <span class='pagination-link' id='prevlink'></span>
-    {% if viewer == 'colorbox' %}
+    {% if viewer == 'openseadragon' %}
       {% include osd_iiif_image_viewer.html manifest=page.manifest prevlink=prevlink nextlink=nextlink %}
     {% else %}
        {% include simple_image_viewer.html full_image=page.full prevlink=prevlink nextlink=nextlink %}
@@ -51,3 +51,5 @@ layout: default
 {% if accordion %}
   {% include accordion.html %}
 {% endif %}
+
+{{ content }}
