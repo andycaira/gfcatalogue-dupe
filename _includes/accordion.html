@@ -21,7 +21,7 @@
         {%- endcapture -%}
       {% endif %}
     {% endif %}
-    <button class="button" data-toggle="collapse" data-target="#Display"><span class="accordion_icon"></span><h4>{{ item.label }}</h4></button>
+    <a class="button" data-toggle="collapse" href="#Display"><span class="accordion_icon"></span><h4>{{ item.label }}</h4></a>
     <br>
     <div id="Display" class="accordion hide collapse">
       {% if item.value contains 'related' %}
