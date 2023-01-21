@@ -433,6 +433,14 @@ accordion
   display: inline-block !important;
 }
 
+.accordion_icon {
+  background-image: url("img/arrow_closed.png");
+  background-size: 16px 16px;
+}
+
+.accordion_icon:active {
+  background-image: url("img/arrow_open.png")
+}
 /*
 
 search box
