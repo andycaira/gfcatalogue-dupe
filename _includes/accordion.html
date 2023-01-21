@@ -25,7 +25,7 @@
     <br>
     <div id="Display" class="accordion hide collapse">
       {% if item.value contains 'related' %}
-        <a href="{{ value | prepend:'test2/' | absolute_url }}">{{ value | capitalize }}</a>
+        <a id="related" href="{{ value | prepend:'test2/' | absolute_url }}">{{ value | capitalize }}</a>
       {% else %}
          <p>{{ value | newline_to_br }}</p>
       {% endif %}
