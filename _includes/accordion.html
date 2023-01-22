@@ -25,9 +25,9 @@
     <br>
     <div id="Display" class="accordion hide collapse">
       {% if item.value contains 'related' %}
-        {% assign list = value | split: "," %}
+        {% assign list = value | split: ", " %}
           {% for work in list %}
-        <a href="{{ work | prepend:'test2/' | absolute_url }}">{{ work | join: "," | capitalize }}</a>
+        <a href="{{ work | prepend:'test2/' | absolute_url }}">{{ work | join: ", " | capitalize }}</a>
           {% endfor %}
       {% else %}
          <p>{{ value | newline_to_br }}</p>
